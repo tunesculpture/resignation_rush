@@ -1,0 +1,27 @@
+plugins {
+    id "com.android.application"
+    id "org.jetbrains.kotlin.android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+android {
+    namespace = "com.example.vidbunkertest"
+    compileSdk = flutter.compileSdkVersion
+    defaultConfig {
+        applicationId = "com.example.vidbunkertest"
+        minSdk = 23
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+    // Keep Java and Kotlin compilation targets identical.
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+}
+flutter { source = "../.." }
