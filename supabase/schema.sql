@@ -1,0 +1,4 @@
+-- Applied to live Supabase project rrtahdvdcczbxzsukjgl.
+-- Tables: profiles, topics, app_settings, daily_campaigns, generated_tweets, reward_events, ai_providers, admins.
+-- RLS enabled. ai_providers direct access revoked from anon/authenticated; Edge Functions access it with server credentials.
+-- This file documents the live schema; the deployed database is the authoritative copy.

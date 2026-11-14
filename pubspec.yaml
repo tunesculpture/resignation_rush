@@ -1,0 +1,19 @@
+name: tweetflow_ai
+description: Topic-based AI tweet generation with Unity Ads rewards.
+publish_to: 'none'
+version: 1.0.0+1
+environment:
+  sdk: '>=3.11.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  supabase_flutter: ^2.15.4
+  shared_preferences: ^2.5.3
+  unity_ads_plugin: ^0.6.0
+  http: ^1.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true
